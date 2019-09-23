@@ -3,10 +3,16 @@ Unofficial Freelancer.com SDK for your Flutter applications.
 
 > NOTE: This is still in technical preview
 
+### Freelancer API
+
+Use the Freelancer API to access a cloud workforce of skilled freelancers from your website, app or software.
+[https://developers.freelancer.com/](https://developers.freelancer.com/)
+
 ### Features
 
 * [X] Freelancer Payload API Models
 * [] Built-in Freelancer HTTP Client
+* [] TBD
 
 ### Contributing
 
