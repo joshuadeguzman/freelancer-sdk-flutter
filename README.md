@@ -1,14 +1,17 @@
-# freelancer_sdk
+# Freelancer Flutter SDK
+Unofficial Freelancer.com SDK for your Flutter Applications.
 
-A new Flutter package project.
+> NOTE: This is still in technical preview
 
-## Getting Started
+### Features
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+* [X] Freelancer Payload API Models
+* [] Built-in Freelancer HTTP Client
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### Contributing
+
+1. Fork it (<https://github.com/joshuadeguzman/freelancer-sdk-flutter/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
