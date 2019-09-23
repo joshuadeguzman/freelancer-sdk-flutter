@@ -1,8 +1,8 @@
 name: freelancer_sdk
 description: A new Flutter package project.
 version: 0.0.1
-author:
-homepage:
+author: Joshua de Guzman <jdeguzman@freelancer.com>
+homepage: https://github.com/joshuadeguzman/freelancer-sdk-flutter/
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
