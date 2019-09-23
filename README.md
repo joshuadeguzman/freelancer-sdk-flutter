@@ -10,9 +10,13 @@ Use the Freelancer API to access a cloud workforce of skilled freelancers from y
 
 ### Features
 
-* [X] Freelancer Payload API Models
-* [ ] Built-in Freelancer HTTP Client
-* [ ] TBD
+* Freelancer Payload API Models
+* Easy way of accessing Freelancer.com Developer API
+
+### Roadmap
+* To be the official SDK of Freelancer.com Developer API for Flutter
+* Provide a built-in Freelancer HTTP Client
+* TBD
 
 ### Contributing
 
