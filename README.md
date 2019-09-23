@@ -11,8 +11,8 @@ Use the Freelancer API to access a cloud workforce of skilled freelancers from y
 ### Features
 
 * [X] Freelancer Payload API Models
-* [] Built-in Freelancer HTTP Client
-* [] TBD
+* [ ] Built-in Freelancer HTTP Client
+* [ ] TBD
 
 ### Contributing
 
