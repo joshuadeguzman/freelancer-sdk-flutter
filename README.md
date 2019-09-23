@@ -1,4 +1,4 @@
-# Freelancer SDK - Flutter
+# Freelancer.com Flutter SDK
 Unofficial Freelancer.com SDK for your Flutter applications.
 
 > NOTE: This is still in technical preview
@@ -24,4 +24,4 @@ Use the Freelancer API to access a cloud workforce of skilled freelancers from y
 
 ### License
 
-Freelancer SDK - Flutter is released under the GNU General Public License v3.0. See [LICENSE](https://github.com/joshuadeguzman/freelancer-sdk-flutter/blob/master/LICENSE) for details.
+Freelancer.com Flutter SDK is released under the GNU General Public License v3.0. See [LICENSE](https://github.com/joshuadeguzman/freelancer-sdk-flutter/blob/master/LICENSE) for details.

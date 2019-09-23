@@ -1,6 +1,6 @@
 name: freelancer_sdk
-description: A new Flutter package project.
-version: 0.0.1
+description: Unofficial Freelancer.com SDK for your Flutter applications.
+version: 0.0.2-dev.1
 author: Joshua de Guzman <jdeguzman@freelancer.com>
 homepage: https://github.com/joshuadeguzman/freelancer-sdk-flutter/
 
