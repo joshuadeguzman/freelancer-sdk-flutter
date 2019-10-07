@@ -47,6 +47,7 @@ void main() async {
       expect(project.upgrades.sealed, false);
       expect(project.upgrades.pfOnly, false);
       expect(project.upgrades.ipContract, false);
+      expect(project.upgrades.assisted, false);
     });
 
     test('evaluate project budget data', () async {
