@@ -2,7 +2,6 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// TODO: Complete upgrades model, remove null data types
 class FLUpgrades {
   bool nonCompete;
   bool projectManagement;
@@ -49,11 +48,8 @@ class FLUpgrades {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['active_prepaid_milestone'] = this.activePrepaidMilestone;
-    data['success_bundle'] = this.successBundle;
     data['non_compete'] = this.nonCompete;
     data['project_management'] = this.projectManagement;
-    data['extend'] = this.extend;
     data['NDA'] = this.nDA;
     data['assisted'] = this.assisted;
     data['urgent'] = this.urgent;
@@ -64,8 +60,6 @@ class FLUpgrades {
     data['sealed'] = this.sealed;
     data['pf_only'] = this.pfOnly;
     data['ip_contract'] = this.ipContract;
-    data['recruiter'] = this.recruiter;
-    data['listed'] = this.listed;
     return data;
   }
 }
