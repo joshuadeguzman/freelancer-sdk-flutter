@@ -4,13 +4,10 @@
 
 // TODO: Complete upgrades model, remove null data types
 class FLUpgrades {
-  Null activePrepaidMilestone;
-  Null successBundle;
   bool nonCompete;
   bool projectManagement;
-  Null extend;
   bool nDA;
-  Null assisted;
+  bool assisted;
   bool urgent;
   bool featured;
   bool nonpublic;
@@ -19,34 +16,25 @@ class FLUpgrades {
   bool sealed;
   bool pfOnly;
   bool ipContract;
-  Null recruiter;
-  Null listed;
 
-  FLUpgrades(
-      {this.activePrepaidMilestone,
-      this.successBundle,
-      this.nonCompete,
-      this.projectManagement,
-      this.extend,
-      this.nDA,
-      this.assisted,
-      this.urgent,
-      this.featured,
-      this.nonpublic,
-      this.fulltime,
-      this.qualified,
-      this.sealed,
-      this.pfOnly,
-      this.ipContract,
-      this.recruiter,
-      this.listed});
+  FLUpgrades({
+    this.nonCompete,
+    this.projectManagement,
+    this.nDA,
+    this.assisted,
+    this.urgent,
+    this.featured,
+    this.nonpublic,
+    this.fulltime,
+    this.qualified,
+    this.sealed,
+    this.pfOnly,
+    this.ipContract,
+  });
 
   FLUpgrades.fromJson(Map<String, dynamic> json) {
-    activePrepaidMilestone = json['active_prepaid_milestone'];
-    successBundle = json['success_bundle'];
     nonCompete = json['non_compete'];
     projectManagement = json['project_management'];
-    extend = json['extend'];
     nDA = json['NDA'];
     assisted = json['assisted'];
     urgent = json['urgent'];
@@ -57,8 +45,6 @@ class FLUpgrades {
     sealed = json['sealed'];
     pfOnly = json['pf_only'];
     ipContract = json['ip_contract'];
-    recruiter = json['recruiter'];
-    listed = json['listed'];
   }
 
   Map<String, dynamic> toJson() {
