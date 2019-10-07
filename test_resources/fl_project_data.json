@@ -24,7 +24,7 @@
         "project_management": false,
         "extend": null,
         "NDA": false,
-        "assisted": null,
+        "assisted": false,
         "urgent": false,
         "featured": true,
         "nonpublic": false,
