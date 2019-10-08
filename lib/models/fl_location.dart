@@ -14,20 +14,22 @@ class FLLocation {
   Null fullAddress;
   Null latitude;
 
-  FLLocation(
-      {this.administrativeArea,
-      this.city,
-      this.country,
-      this.vicinity,
-      this.longitude,
-      this.fullAddress,
-      this.latitude});
+  FLLocation({
+    this.administrativeArea,
+    this.city,
+    this.country,
+    this.vicinity,
+    this.longitude,
+    this.fullAddress,
+    this.latitude,
+  });
 
   FLLocation.fromJson(Map<String, dynamic> json) {
     administrativeArea = json['administrative_area'];
     city = json['city'];
-    country =
-        json['country'] != null ? new FLCountry.fromJson(json['country']) : null;
+    country = json['country'] != null
+        ? new FLCountry.fromJson(json['country'])
+        : null;
     vicinity = json['vicinity'];
     longitude = json['longitude'];
     fullAddress = json['full_address'];

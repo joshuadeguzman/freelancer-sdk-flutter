@@ -20,22 +20,23 @@ class FLCountry {
   Null flagUrl;
   Null regionId;
 
-  FLCountry(
-      {this.highresFlagUrl,
-      this.code,
-      this.name,
-      this.seoUrl,
-      this.flagUrlCdn,
-      this.highresFlagUrlCdn,
-      this.phoneCode,
-      this.languageCode,
-      this.demonym,
-      this.languageId,
-      this.person,
-      this.iso3,
-      this.sanction,
-      this.flagUrl,
-      this.regionId});
+  FLCountry({
+    this.highresFlagUrl,
+    this.code,
+    this.name,
+    this.seoUrl,
+    this.flagUrlCdn,
+    this.highresFlagUrlCdn,
+    this.phoneCode,
+    this.languageCode,
+    this.demonym,
+    this.languageId,
+    this.person,
+    this.iso3,
+    this.sanction,
+    this.flagUrl,
+    this.regionId,
+  });
 
   FLCountry.fromJson(Map<String, dynamic> json) {
     highresFlagUrl = json['highres_flag_url'];

@@ -11,7 +11,11 @@ class FLResponse<T> {
   String requestId;
   T result;
 
-  FLResponse({this.status, this.requestId, this.result});
+  FLResponse({
+    this.status,
+    this.requestId,
+    this.result,
+  });
 
   FLResponse.fromJson(Map<String, dynamic> json) {
     status = json['status'];

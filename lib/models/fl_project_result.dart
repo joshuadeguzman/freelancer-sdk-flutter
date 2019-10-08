@@ -10,8 +10,12 @@ class FLProjectResult {
   Null users;
   List<FLProject> projects;
 
-  FLProjectResult(
-      {this.totalCount, this.selectedBids, this.users, this.projects});
+  FLProjectResult({
+    this.totalCount,
+    this.selectedBids,
+    this.users,
+    this.projects,
+  });
 
   FLProjectResult.fromJson(Map<String, dynamic> json) {
     totalCount = json['total_count'];

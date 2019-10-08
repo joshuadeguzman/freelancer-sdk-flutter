@@ -13,15 +13,16 @@ class FLCurrency {
   int id;
   bool isExternal;
 
-  FLCurrency(
-      {this.code,
-      this.name,
-      this.country,
-      this.sign,
-      this.isEscrowcomSupported,
-      this.exchangeRate,
-      this.id,
-      this.isExternal});
+  FLCurrency({
+    this.code,
+    this.name,
+    this.country,
+    this.sign,
+    this.isEscrowcomSupported,
+    this.exchangeRate,
+    this.id,
+    this.isExternal,
+  });
 
   FLCurrency.fromJson(Map<String, dynamic> json) {
     code = json['code'];

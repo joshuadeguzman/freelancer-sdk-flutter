@@ -10,12 +10,13 @@ class FLBudget {
   Null projectType;
   Null name;
 
-  FLBudget(
-      {this.currencyId,
-      this.minimum,
-      this.maximum,
-      this.projectType,
-      this.name});
+  FLBudget({
+    this.currencyId,
+    this.minimum,
+    this.maximum,
+    this.projectType,
+    this.name,
+  });
 
   FLBudget.fromJson(Map<String, dynamic> json) {
     currencyId = json['currency_id'];

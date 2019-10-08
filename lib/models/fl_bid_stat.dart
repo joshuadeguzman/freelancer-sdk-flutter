@@ -6,7 +6,10 @@ class FLBidStats {
   int bidCount;
   double bidAvg;
 
-  FLBidStats({this.bidCount, this.bidAvg});
+  FLBidStats({
+    this.bidCount,
+    this.bidAvg,
+  });
 
   FLBidStats.fromJson(Map<String, dynamic> json) {
     bidCount = json['bid_count'];
