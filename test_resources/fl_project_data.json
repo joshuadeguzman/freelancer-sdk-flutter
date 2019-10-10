@@ -118,5 +118,13 @@
     "is_seller_kyc_required": false,
     "hireme_initial_bid": null,
     "from_user_location": null,
-    "deloitte_details": null
+    "deloitte_details": null,
+    "timezones": [
+        {
+            "country": "CI",
+            "offset": 0,
+            "id": 2,
+            "timezone": "Africa/Abidjan"
+        }
+    ]
 }
