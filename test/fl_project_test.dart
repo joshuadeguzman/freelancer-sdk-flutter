@@ -21,7 +21,7 @@ void main() async {
       expect(project.frontendProjectStatus, "open");
       expect(project.deleted, false);
       expect(project.local, false);
-      expect(project.location, null);
+      expect(project.location, isNotNull);
       expect(project.isSellerKycRequired, false);
       expect(project.timeSubmitted, 1569271320);
     });
@@ -35,6 +35,11 @@ void main() async {
       expect(project.currency.exchangeRate, 1.0);
       expect(project.currency.id, 1);
       expect(project.currency.isExternal, false);
+    });
+
+    test('evaluate project countries data', () async {
+      expect(project.countries.result.countries[0].name, "Afghanistan");
+      expect(project.countries.result.countries[0].code, "AF");
     });
 
     test('evaluate project upgrades data', () async {
