@@ -115,6 +115,31 @@
         "bid_count": 45,
         "bid_avg": 772.6666666666666
     },
+    "countries": {
+        "status": "success",
+        "result": {
+            "countries": [
+                {
+                    "highres_flag_url": null,
+                    "code": "AF",
+                    "name": "Afghanistan",
+                    "seo_url": null,
+                    "flag_url_cdn": null,
+                    "highres_flag_url_cdn": null,
+                    "phone_code": null,
+                    "language_code": null,
+                    "demonym": null,
+                    "language_id": null,
+                    "person": null,
+                    "iso3": null,
+                    "sanction": null,
+                    "flag_url": null,
+                    "region_id": null
+                }
+            ]
+        },
+        "request_id": "ccc12e03adf119fa085863c42b286c1a"
+    },
     "is_seller_kyc_required": false,
     "hireme_initial_bid": null,
     "from_user_location": null,
