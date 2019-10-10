@@ -5,6 +5,7 @@
 // TODO: Complete project model, remove null data types
 import 'package:freelancer_sdk/models/fl_bid_stat.dart';
 import 'package:freelancer_sdk/models/fl_budget.dart';
+import 'package:freelancer_sdk/models/fl_countries.dart';
 import 'package:freelancer_sdk/models/fl_currency.dart';
 import 'package:freelancer_sdk/models/fl_location.dart';
 import 'package:freelancer_sdk/models/fl_upgrades.dart';
@@ -42,41 +43,42 @@ class FLProject {
   FLBudget budget;
   FLBidStats bidStats;
   bool isSellerKycRequired;
+  FLCountries countries;
 
-  FLProject({
-    this.hidebids,
-    this.isEscrowProject,
-    this.bidperiod,
-    this.currency,
-    this.featured,
-    this.previewDescription,
-    this.upgrades,
-    this.id,
-    this.poolIds,
-    this.activePrepaidMilestone,
-    this.negotiated,
-    this.title,
-    this.submitdate,
-    this.nonpublic,
-    this.location,
-    this.isBuyerKycRequired,
-    this.type,
-    this.hireme,
-    this.ownerId,
-    this.status,
-    this.deleted,
-    this.timeFreeBidsExpire,
-    this.frontendProjectStatus,
-    this.timeUpdated,
-    this.language,
-    this.seoUrl,
-    this.urgent,
-    this.local,
-    this.timeSubmitted,
-    this.budget,
-    this.bidStats,
-    this.isSellerKycRequired,
-  });
+  FLProject(
+      {this.hidebids,
+      this.isEscrowProject,
+      this.bidperiod,
+      this.currency,
+      this.featured,
+      this.previewDescription,
+      this.upgrades,
+      this.id,
+      this.poolIds,
+      this.activePrepaidMilestone,
+      this.negotiated,
+      this.title,
+      this.submitdate,
+      this.nonpublic,
+      this.location,
+      this.isBuyerKycRequired,
+      this.type,
+      this.hireme,
+      this.ownerId,
+      this.status,
+      this.deleted,
+      this.timeFreeBidsExpire,
+      this.frontendProjectStatus,
+      this.timeUpdated,
+      this.language,
+      this.seoUrl,
+      this.urgent,
+      this.local,
+      this.timeSubmitted,
+      this.budget,
+      this.bidStats,
+      this.isSellerKycRequired,
+      this.countries});
 
   FLProject.fromJson(Map<String, dynamic> json) {
     hidebids = json['hidebids'];
@@ -120,6 +122,9 @@ class FLProject {
         ? new FLBidStats.fromJson(json['bid_stats'])
         : null;
     isSellerKycRequired = json['is_seller_kyc_required'];
+    countries = json['countries'] != null
+        ? new FLCountries.fromJson(json['countries'])
+        : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -166,6 +171,7 @@ class FLProject {
       data['bid_stats'] = this.bidStats.toJson();
     }
     data['is_seller_kyc_required'] = this.isSellerKycRequired;
+    data['countries'] = this.countries;
     return data;
   }
 }
