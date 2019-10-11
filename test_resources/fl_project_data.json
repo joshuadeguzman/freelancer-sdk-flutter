@@ -83,7 +83,20 @@
     "hireme": false,
     "owner_id": 8642292,
     "status": "active",
-    "jobs": null,
+    "jobs": [
+        {
+            "category": {
+                "id": 1,
+                "name": "Websites, IT & Software"
+            },
+            "name": "ASP",
+            "seo_url": "asp",
+            "active_project_count": null,
+            "local": false,
+            "id": 5,
+            "seo_info": null
+        }
+    ],
     "description": null,
     "can_post_review": null,
     "deleted": false,
