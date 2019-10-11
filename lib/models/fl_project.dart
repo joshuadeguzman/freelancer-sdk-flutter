@@ -8,6 +8,7 @@ import 'package:freelancer_sdk/models/fl_budget.dart';
 import 'package:freelancer_sdk/models/fl_currency.dart';
 import 'package:freelancer_sdk/models/fl_location.dart';
 import 'package:freelancer_sdk/models/fl_upgrades.dart';
+import 'package:freelancer_sdk/models/fl_country.dart';
 
 class FLProject {
   bool hidebids;
@@ -42,6 +43,7 @@ class FLProject {
   FLBudget budget;
   FLBidStats bidStats;
   bool isSellerKycRequired;
+  List<FLCountry> countries;
 
   FLProject({
     this.hidebids,
@@ -119,6 +121,12 @@ class FLProject {
     bidStats = json['bid_stats'] != null
         ? new FLBidStats.fromJson(json['bid_stats'])
         : null;
+    if (json['countries'] != null) {
+      countries = new List<FLCountry>();
+      json['countries'].forEach((v) {
+        countries.add(new FLCountry.fromJson(v));
+      });
+    }
     isSellerKycRequired = json['is_seller_kyc_required'];
   }
 
@@ -166,6 +174,7 @@ class FLProject {
       data['bid_stats'] = this.bidStats.toJson();
     }
     data['is_seller_kyc_required'] = this.isSellerKycRequired;
+    data['countries'] = this.countries;
     return data;
   }
 }
