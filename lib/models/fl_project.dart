@@ -6,6 +6,7 @@
 import 'package:freelancer_sdk/models/fl_bid_stat.dart';
 import 'package:freelancer_sdk/models/fl_budget.dart';
 import 'package:freelancer_sdk/models/fl_currency.dart';
+import 'package:freelancer_sdk/models/fl_job.dart';
 import 'package:freelancer_sdk/models/fl_location.dart';
 import 'package:freelancer_sdk/models/fl_upgrades.dart';
 
@@ -41,6 +42,7 @@ class FLProject {
   int timeSubmitted;
   FLBudget budget;
   FLBidStats bidStats;
+  List<FLJob> jobs;
   bool isSellerKycRequired;
 
   FLProject({
@@ -76,6 +78,7 @@ class FLProject {
     this.budget,
     this.bidStats,
     this.isSellerKycRequired,
+    this.jobs
   });
 
   FLProject.fromJson(Map<String, dynamic> json) {
@@ -120,6 +123,12 @@ class FLProject {
         ? new FLBidStats.fromJson(json['bid_stats'])
         : null;
     isSellerKycRequired = json['is_seller_kyc_required'];
+    if (json['jobs'] != null) {
+      jobs = new List<FLJob>();
+      json['jobs'].forEach((v) {
+        jobs.add(new FLJob.fromJson(v));
+      });
+    }
   }
 
   Map<String, dynamic> toJson() {
