@@ -21,7 +21,7 @@ void main() async {
       expect(project.frontendProjectStatus, "open");
       expect(project.deleted, false);
       expect(project.local, false);
-      expect(project.location, null);
+      expect(project.location, isNotNull);
       expect(project.isSellerKycRequired, false);
       expect(project.timeSubmitted, 1569271320);
     });
@@ -58,6 +58,18 @@ void main() async {
       expect(project.budget.name, null);
     });
 
+    test('evaluate project jobs data', () async {
+      expect(project.jobs[0].category.id, 1);
+      expect(project.jobs[0].category.name, "Websites, IT & Software");
+      expect(project.jobs[0].name, "ASP");
+      expect(project.jobs[0].seoUrl, "asp");
+      expect(project.jobs[0].activeProjectCount, null);
+      expect(project.jobs[0].local, false);
+      expect(project.jobs[0].id, 5);
+      expect(project.jobs[0].seoInfo, null);
+
+    });
+    
     test('evaluate project bid stats data', () async {
       expect(project.bidStats.bidCount, 45);
       expect(project.bidStats.bidAvg, 772.6666666666666);
