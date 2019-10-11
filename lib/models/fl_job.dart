@@ -8,10 +8,10 @@ class FLJob {
   FLCategory category;
   String name;
   String seoUrl;
-  Null activeProjectCount;
+  int activeProjectCount;
   bool local;
   int id;
-  Null seoInfo;
+  String seoInfo;
 
   FLJob({
     this.category,
