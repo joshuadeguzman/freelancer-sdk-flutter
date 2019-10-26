@@ -57,6 +57,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.3"
+  cupertino_icons:
+    dependency: "direct main"
+    description:
+      name: cupertino_icons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -67,6 +74,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  freelancer_sdk:
+    dependency: "direct main"
+    description:
+      name: freelancer_sdk
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1+2"
   image:
     dependency: transitive
     description:
