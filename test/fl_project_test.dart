@@ -61,6 +61,13 @@ void main() async {
       expect(project.budget.name, null);
     });
 
+    test('evaluate project timezones data', () async {
+      expect(project.timezones[0].country, "CI");
+      expect(project.timezones[0].offset, 0);
+      expect(project.timezones[0].id, 2);
+      expect(project.timezones[0].timezone, "Africa/Abidjan");
+    });
+
     test('evaluate project bid stats data', () async {
       expect(project.bidStats.bidCount, 45);
       expect(project.bidStats.bidAvg, 772.6666666666666);

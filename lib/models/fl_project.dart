@@ -7,6 +7,7 @@ import 'package:freelancer_sdk/models/fl_bid_stat.dart';
 import 'package:freelancer_sdk/models/fl_budget.dart';
 import 'package:freelancer_sdk/models/fl_currency.dart';
 import 'package:freelancer_sdk/models/fl_location.dart';
+import 'package:freelancer_sdk/models/fl_timezone.dart';
 import 'package:freelancer_sdk/models/fl_upgrades.dart';
 import 'package:freelancer_sdk/models/fl_country.dart';
 
@@ -44,7 +45,7 @@ class FLProject {
   FLBidStats bidStats;
   bool isSellerKycRequired;
   List<FLCountry> countries;
-
+  List <FLTimezone>timezones;
   FLProject({
     this.hidebids,
     this.isEscrowProject,
@@ -78,6 +79,7 @@ class FLProject {
     this.budget,
     this.bidStats,
     this.isSellerKycRequired,
+    this.timezones
   });
 
   FLProject.fromJson(Map<String, dynamic> json) {
@@ -128,6 +130,13 @@ class FLProject {
       });
     }
     isSellerKycRequired = json['is_seller_kyc_required'];
+    if (json['timezones'] != null) {
+      timezones = new List<FLTimezone>();
+      json['timezones'].forEach((v) {
+        timezones.add(new FLTimezone.fromJson(v));
+      });
+    }
+
   }
 
   Map<String, dynamic> toJson() {
