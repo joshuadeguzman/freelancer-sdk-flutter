@@ -5,7 +5,7 @@ author: Joshua de Guzman <jdeguzman@freelancer.com>
 homepage: https://github.com/joshuadeguzman/freelancer-sdk-flutter/
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
