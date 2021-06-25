@@ -37,17 +37,20 @@ void main() async {
       expect(project.currency.isExternal, false);
     });
 
-    test('evaluate project upgrades data', () async {
-      expect(project.upgrades.nDA, false);
-      expect(project.upgrades.urgent, false);
-      expect(project.upgrades.featured, true);
-      expect(project.upgrades.nonpublic, false);
-      expect(project.upgrades.fulltime, false);
-      expect(project.upgrades.qualified, false);
-      expect(project.upgrades.sealed, false);
-      expect(project.upgrades.pfOnly, false);
-      expect(project.upgrades.ipContract, false);
-      expect(project.upgrades.assisted, false);
+        test('evaluate project currency data', () async {
+      expect(project.currency.code, "USD");
+      expect(project.currency.name, "US Dollar");
+      expect(project.currency.country, "US");
+      expect(project.currency.sign, "\$");
+      expect(project.currency.isEscrowcomSupported, true);
+      expect(project.currency.exchangeRate, 1.0);
+      expect(project.currency.id, 1);
+      expect(project.currency.isExternal, false);
+    });
+
+    test('evaluate project countries data', () async {
+      expect(project.countries[0].name, "Afghanistan");
+      expect(project.countries[0].code, "AF");
     });
 
     test('evaluate project budget data', () async {

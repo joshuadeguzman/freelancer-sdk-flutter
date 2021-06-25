@@ -5,8 +5,8 @@
 // TODO: Complete country model, remove null data types
 class FLCountry {
   Null highresFlagUrl;
-  Null code;
-  Null name;
+  String code;
+  String name;
   Null seoUrl;
   Null flagUrlCdn;
   Null highresFlagUrlCdn;
